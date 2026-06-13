@@ -1,0 +1,23 @@
+{
+  "horizon_7d": {
+    "MAE": 353.85,
+    "RMSE": 1304.33,
+    "MAPE_pct": 6.25,
+    "n_test": 1260,
+    "n_train": 8757
+  },
+  "horizon_14d": {
+    "MAE": 524.83,
+    "RMSE": 1818.63,
+    "MAPE_pct": 3.96,
+    "n_test": 1260,
+    "n_train": 8757
+  },
+  "horizon_30d": {
+    "MAE": 1207.33,
+    "RMSE": 3916.16,
+    "MAPE_pct": 3.4,
+    "n_test": 1260,
+    "n_train": 8757
+  }
+}

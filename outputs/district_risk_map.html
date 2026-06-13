@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bbd640c4f142f06cf430127d00a769e4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bbd640c4f142f06cf430127d00a769e4" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bbd640c4f142f06cf430127d00a769e4 = L.map(
+                "map_bbd640c4f142f06cf430127d00a769e4",
+                {
+                    center: [20.3, 85.9],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fc6cf15b4aec8c16a33cfc4beed07304 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fc6cf15b4aec8c16a33cfc4beed07304.addTo(map_bbd640c4f142f06cf430127d00a769e4);
+        
+    
+            var circle_marker_51c5fc3c5b78cca44a794a3ee660cc08 = L.circleMarker(
+                [20.18, 85.6],
+                {"bubblingMouseEvents": true, "color": "#08306b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#08306b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30.0, "stroke": true, "weight": 3}
+            ).addTo(map_bbd640c4f142f06cf430127d00a769e4);
+        
+    
+        var popup_85db2643abf622c3e094fc2f0a3554b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0fb1fc3b0d72fd3ff26ff985e333f1aa = $(`<div id="html_0fb1fc3b0d72fd3ff26ff985e333f1aa" style="width: 100.0%; height: 100.0%;">Khordha: 698 kits (7-day)</div>`)[0];
+                popup_85db2643abf622c3e094fc2f0a3554b0.setContent(html_0fb1fc3b0d72fd3ff26ff985e333f1aa);
+            
+        
+
+        circle_marker_51c5fc3c5b78cca44a794a3ee660cc08.bindPopup(popup_85db2643abf622c3e094fc2f0a3554b0)
+        ;
+
+        
+    
+    
+            circle_marker_51c5fc3c5b78cca44a794a3ee660cc08.bindTooltip(
+                `<div>
+                     Khordha
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e0e7bb2b3ef12e1581049198f5746ac4 = L.circleMarker(
+                [20.25, 86.17],
+                {"bubblingMouseEvents": true, "color": "#08306b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#08306b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.621938994701416, "stroke": true, "weight": 3}
+            ).addTo(map_bbd640c4f142f06cf430127d00a769e4);
+        
+    
+        var popup_b880fe8b859d95263fac2985b33bd9f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6d3aaf36d55b384a1fb71d0d599414b = $(`<div id="html_a6d3aaf36d55b384a1fb71d0d599414b" style="width: 100.0%; height: 100.0%;">Jagatsinghpur: 686 kits (7-day)</div>`)[0];
+                popup_b880fe8b859d95263fac2985b33bd9f0.setContent(html_a6d3aaf36d55b384a1fb71d0d599414b);
+            
+        
+
+        circle_marker_e0e7bb2b3ef12e1581049198f5746ac4.bindPopup(popup_b880fe8b859d95263fac2985b33bd9f0)
+        ;
+
+        
+    
+    
+            circle_marker_e0e7bb2b3ef12e1581049198f5746ac4.bindTooltip(
+                `<div>
+                     Jagatsinghpur
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dc9eec0d48ab1811f0068ca9168d9698 = L.circleMarker(
+                [20.5, 86.6],
+                {"bubblingMouseEvents": true, "color": "#08306b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#08306b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 29.114707145925824, "stroke": true, "weight": 3}
+            ).addTo(map_bbd640c4f142f06cf430127d00a769e4);
+        
+    
+        var popup_ef99df8da534ba4af91cb62e0adb61dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4190b3a171f552e75b95ff9329a66d98 = $(`<div id="html_4190b3a171f552e75b95ff9329a66d98" style="width: 100.0%; height: 100.0%;">Kendrapara: 670 kits (7-day)</div>`)[0];
+                popup_ef99df8da534ba4af91cb62e0adb61dc.setContent(html_4190b3a171f552e75b95ff9329a66d98);
+            
+        
+
+        circle_marker_dc9eec0d48ab1811f0068ca9168d9698.bindPopup(popup_ef99df8da534ba4af91cb62e0adb61dc)
+        ;
+
+        
+    
+    
+            circle_marker_dc9eec0d48ab1811f0068ca9168d9698.bindTooltip(
+                `<div>
+                     Kendrapara
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_646995ed3ec1e6a7361529ded524682e = L.circleMarker(
+                [21.06, 86.5],
+                {"bubblingMouseEvents": true, "color": "#08306b", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#08306b", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 28.166404124301877, "stroke": true, "weight": 3}
+            ).addTo(map_bbd640c4f142f06cf430127d00a769e4);
+        
+    
+        var popup_7dab2c6702945357032b8859f36e359e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8dbbc04241604c2a82fdc7c865d8603 = $(`<div id="html_d8dbbc04241604c2a82fdc7c865d8603" style="width: 100.0%; height: 100.0%;">Bhadrak: 640 kits (7-day)</div>`)[0];
+                popup_7dab2c6702945357032b8859f36e359e.setContent(html_d8dbbc04241604c2a82fdc7c865d8603);
+            
+        
+
+        circle_marker_646995ed3ec1e6a7361529ded524682e.bindPopup(popup_7dab2c6702945357032b8859f36e359e)
+        ;
+
+        
+    
+    
+            circle_marker_646995ed3ec1e6a7361529ded524682e.bindTooltip(
+                `<div>
+                     Bhadrak
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ad76a2d323c2a60f7864827252a178f5 = L.circleMarker(
+                [19.4, 84.8],
+                {"bubblingMouseEvents": true, "color": "#2171b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2171b5", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 25.315194042675067, "stroke": true, "weight": 3}
+            ).addTo(map_bbd640c4f142f06cf430127d00a769e4);
+        
+    
+        var popup_bfa89ae8f7601c6b753ddcf27ece379f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fabe589ebbf553877deb22942061f261 = $(`<div id="html_fabe589ebbf553877deb22942061f261" style="width: 100.0%; height: 100.0%;">Ganjam: 550 kits (7-day)</div>`)[0];
+                popup_bfa89ae8f7601c6b753ddcf27ece379f.setContent(html_fabe589ebbf553877deb22942061f261);
+            
+        
+
+        circle_marker_ad76a2d323c2a60f7864827252a178f5.bindPopup(popup_bfa89ae8f7601c6b753ddcf27ece379f)
+        ;
+
+        
+    
+    
+            circle_marker_ad76a2d323c2a60f7864827252a178f5.bindTooltip(
+                `<div>
+                     Ganjam
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2b41f48b2560e961455a125f9a682498 = L.circleMarker(
+                [21.5, 86.93],
+                {"bubblingMouseEvents": true, "color": "#2171b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2171b5", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 24.74180151797222, "stroke": true, "weight": 3}
+            ).addTo(map_bbd640c4f142f06cf430127d00a769e4);
+        
+    
+        var popup_5d77b71e7428e53d2d0f2c3b6784054b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_517526d8822d174f7839301aedd1fc07 = $(`<div id="html_517526d8822d174f7839301aedd1fc07" style="width: 100.0%; height: 100.0%;">Balasore: 531 kits (7-day)</div>`)[0];
+                popup_5d77b71e7428e53d2d0f2c3b6784054b.setContent(html_517526d8822d174f7839301aedd1fc07);
+            
+        
+
+        circle_marker_2b41f48b2560e961455a125f9a682498.bindPopup(popup_5d77b71e7428e53d2d0f2c3b6784054b)
+        ;
+
+        
+    
+    
+            circle_marker_2b41f48b2560e961455a125f9a682498.bindTooltip(
+                `<div>
+                     Balasore
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_56137051274210a03264d9e5bbbc3e17 = L.circleMarker(
+                [19.8, 85.83],
+                {"bubblingMouseEvents": true, "color": "#2171b5", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2171b5", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.814979235285698, "stroke": true, "weight": 3}
+            ).addTo(map_bbd640c4f142f06cf430127d00a769e4);
+        
+    
+        var popup_f555ab828f6650546ba848fc827bfea5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af202fa36e2f1784da02063d7e378f95 = $(`<div id="html_af202fa36e2f1784da02063d7e378f95" style="width: 100.0%; height: 100.0%;">Puri: 438 kits (7-day)</div>`)[0];
+                popup_f555ab828f6650546ba848fc827bfea5.setContent(html_af202fa36e2f1784da02063d7e378f95);
+            
+        
+
+        circle_marker_56137051274210a03264d9e5bbbc3e17.bindPopup(popup_f555ab828f6650546ba848fc827bfea5)
+        ;
+
+        
+    
+    
+            circle_marker_56137051274210a03264d9e5bbbc3e17.bindTooltip(
+                `<div>
+                     Puri
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
